@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Michał Nowak, 23.03.2025 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 4 nowak</title>
+    </head>
+    <body>
+        <h1>Sposoby podłączania CSS do kodu strony WWW</h1>
+        <ol type=1>
+            <li>
+                Zewnętrzny arkusz stylów<br>
+                <textarea readonly=true rows=5 cols=40><head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>         </textarea>
+            </li>
+            <li>
+                Styl lokalny<br>
+                <textarea readonly=true rows=3 cols=40><selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor></textarea>
+            </li>
+            <li>
+                Wewnętrzny arkusz stylów<br>
+                <textarea readonly=true rows=9 cols=40><head>
+    <style type="text/css">
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+    </style>
+</head>         </textarea>
+            </li>
+            <li>
+                Alternatywny arkusz stylów<br>
+                <textarea readonly=true rows=12 cols=40><head>
+    <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>         </textarea>
+            </li>
+            <li>
+                Import arkusza stylów<br>
+                <textarea readonly=true rows=5 cols=40><style type="text/css">
+    @import url(adres zewnętrznego arkusza stylów);
+</style>        </textarea>
+            </li>
+        </ol>
+    </body>
+</html>

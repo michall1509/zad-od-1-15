@@ -1,0 +1,65 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 9 nowak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .ramka {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Składnia teoretyczna</h1>
+    <p>Składnia stylu w CSS definiuje reguły formatowania elementów HTML za pomocą selektorów i deklaracji w nawiasach klamrowych.</p>
+    <div class="ramka">
+        selektor { właściwość: wartość; }
+    </div>
+
+    <h1>2. Gdzie wstawiany jest styl zewnętrzny?</h1>
+    <p>Styl zewnętrzny jest wstawiany w sekcji &lt;head&gt; dokumentu HTML. Odpowiada za to znacznik &lt;link&gt;. Może występować dowolną liczbę razy.</p>
+
+    <h1>3. Najprostsza forma wstawiania stylu zewnętrznego</h1>
+    <div class="ramka">
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    </div>
+
+    <h1>4. Ile arkuszy stylów może być dołączanych?</h1>
+    <p>Można dołączyć dowolną liczbę arkuszy stylów. Kolejność podłączania ma znaczenie — ostatni załadowany arkusz ma priorytet w przypadku konfliktów.</p>
+
+    <h1>5. Co się dzieje w przypadku konfliktów?</h1>
+    <p>W przypadku konfliktów priorytet ma styl zapisany w ostatnim załadowanym arkuszu.</p>
+
+    <h1>6. Tworzenie i edycja plików arkuszy w edytorze tekstowym</h1>
+    <p>Tworzymy plik tekstowy z rozszerzeniem <code>.css</code> i zapisujemy reguły stylów w formacie składniowym.</p>
+
+    <h1>7. Tworzenie i edycja plików arkuszy w specjalnym edytorze CSS</h1>
+    <p>Specjalne edytory, jak Visual Studio Code czy Sublime Text, oferują funkcje ułatwiające tworzenie i edycję CSS.</p>
+
+    <h1>8. Jakie rozszerzenie posiada zewnętrzny arkusz stylów?</h1>
+    <p>Plik zewnętrznego arkusza stylów posiada rozszerzenie <code>.css</code>.</p>
+
+    <h1>9. Zalety zewnętrznego arkusza stylów</h1>
+    <ul>
+        <li>Łatwe zarządzanie stylem wielu dokumentów.</li>
+        <li>Lepsza wydajność dzięki oddzielnemu ładowaniu arkuszy.</li>
+    </ul>
+
+    <h1>10. Uwagi na temat pisania w CSS</h1>
+    <p>Unikaj powtarzających się reguł, stosuj nazwy klas zgodnie z konwencją BEM i waliduj kod pod kątem błędów.</p>
+</body>
+</html>
+
+
