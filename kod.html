@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>od zadań</title>
+    </head>
+    <script>
+        window.onload = function() {
+            const htmlArea = document.getElementById("html");
+            const cssArea = document.getElementById("css");
+
+            const params = new URL(document.URL).searchParams;
+            const zHTML = params.get("html");
+            const zCSS = params.get("css");
+
+            console.log(zHTML);
+            console.log(zCSS);
+
+            fetch("./" + zHTML).then(response => response.text())
+            .then(html => htmlArea.innerHTML = html)
+            .catch(error => console.error(error));
+
+            if (zCSS != "none") {
+                fetch("./" + zCSS).then(response => response.text())
+                .then(css => cssArea.innerHTML = css)
+                .catch(error => console.error(error));
+            }
+            else {
+                cssArea.style.visibility = "hidden";
+                document.getElementById("lblCss").style.visibility = "hidden";
+            }
+        }
+    </script>
+    <body>
+        <label for="html">KOD HTML</label><br>
+        <textarea id="html" rows=18 cols=60></textarea>
+        <br>
+        <br>
+        <label id="lblCss" for="css">KOD CSS</label><br>
+        <textarea id="css" rows=18 cols=60></textarea>
+    </body>
+</html>
