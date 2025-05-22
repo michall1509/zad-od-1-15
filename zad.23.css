@@ -1,0 +1,40 @@
+p#pogrubione_nowak
+{
+font-size:30;
+font-weight:900;
+color:#905ED3;
+}
+p#pochylone_nowak
+{
+font-style: italic;
+font-size: 35;
+color:#F4C26F;
+}
+
+p#index_gorny_nowak
+{
+vertical-align:super;
+font-size:1.0cm;
+color:#A4901F
+}
+
+p#index_dolny_nowak
+{
+font-size:1.5cm;
+color:rgb(25%,96%,91%);
+}
+p#mono_nowak
+{
+    font-size:35;
+    color:#24E06F;
+}
+p#powiekszenie_nowak
+{
+    font-size:36;
+    color:#5E40A1;
+}
+p#pomniejszenie_nowak
+{
+    font-size:37;
+    color:rgb(76%,64%,24%);
+}
